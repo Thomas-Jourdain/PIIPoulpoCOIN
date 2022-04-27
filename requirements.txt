@@ -1,6 +1,3 @@
 wheel
 flask
 flask_mongoengine
-pandas
-scipy
-numpy
