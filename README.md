@@ -1,9 +1,6 @@
 
 # PoulpoCOIN
 
-A brief description of what this project does and who it's for
-
-
 ## Installation
 Création de l'environnement virtuel
  
@@ -47,7 +44,7 @@ Permet à l'utilisateur de se connecter .
   GET /api/transactions
 ```
 
-Renvoie toute les transactions a enresgistrer 
+Renvoie toute les transactions à enregistrer 
 
 
 #### Obtenir un bloc
@@ -72,11 +69,7 @@ Renvoie le bloc n°index
 | :-------- | :------- | :------------------------- |
 | `signature` | `int` | **Required**. Signature du block |
 
-Permet à un utilisateur connecter de proposé un block .
-L'utilisateur ne donne que la signature du bloc, car les autres
-informations sont directement envoyer par le site.
-Cela est du au fait que la blockchain ne supporte qu'une branche
-et que par conséquand il n'y a qu'un seul bloc auxquel se ratacher.
+Permet à un utilisateur connecté de proposer un bloc . L'utilisateur ne donne que la signature du bloc, car les autres informations sont directement envoyées par le site. Cela est dû au fait que la blockchain ne supporte qu'une branche et que par conséquent il n'y a qu'un seul bloc auquel se rattacher
 
 #### Miner un bloc
 
@@ -84,8 +77,7 @@ et que par conséquand il n'y a qu'un seul bloc auxquel se ratacher.
   GET /api/mine
 ```
 
-Permet à un utilisateur connecter de miner un bloc .
-Dans les fait, le minage est effectuer par le serveur.
+Permet à un utilisateur connecté de miner un bloc . Dans les faits, le minage est effectué par le serveur.
 
 #### Obtenir tous les blocs
 
@@ -93,6 +85,6 @@ Dans les fait, le minage est effectuer par le serveur.
   GET /api/blockchain
 ```
 
-Renvoie tous les bloc de la blockchain.
+Renvoie tous les blocs de la blockchain.
 
 

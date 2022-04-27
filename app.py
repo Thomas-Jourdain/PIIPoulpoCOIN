@@ -185,7 +185,10 @@ def transaction():
             donnees = request.form
             nom = donnees.get('receveur')
             montant = donnees.get('montant')
-            receveur = User.objects.get(pseudo=nom)
+            try:
+                receveur = User.objects.get(pseudo=nom)
+            except:
+                return render_template("transaction.html",utilisateur=utilisateur)
             nouveau_solde=int(utilisateur.solde)-int(montant)
             if nouveau_solde<0:
                 return render_template("erreurSoldeInsuf.html",utilisateur=utilisateur)
