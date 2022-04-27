@@ -1,0 +1,19 @@
+{% extends "base.html"  %}
+{% block content %}
+    <h1>Faire une transaction</h1>
+    <h2>Mon Solde : {{utilisateur.solde}}</h2>
+    <form action="{{url_for('transaction')}}" method="POST">
+        <p>
+            <label for="receveur">Receveur : </label>
+            <input type="text" name="receveur" id="receveur" required>
+        </p>
+        <p>
+            <label for="montant">Montant : </label>
+            <input type="number" name="montant" id="montant" required>
+        </p>
+            <!-- Bouton d'envoi du formulaire -->
+            <input type="submit" value="Envoyer le formulaire">
+            <!-- <button type="submit">Envoyer le formulaire</button> -->
+        </p>
+    </form>
+{% endblock %}

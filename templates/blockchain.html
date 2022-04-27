@@ -1,0 +1,14 @@
+{% extends "base.html"  %}
+{% block content %}
+<h1>Elements de la blockchain</h1>
+<ul>
+    {% for block in blocks:    %}
+        <li>
+            {{block}}
+        </li>
+    {% endfor %}
+
+    
+</ul> 
+    
+{% endblock %}
