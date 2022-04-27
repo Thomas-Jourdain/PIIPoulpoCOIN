@@ -70,7 +70,7 @@ Renvoie le bloc n°index
 
 | Parametre | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `signature` | `int` | **Required**. Nom de l'utilisateur |
+| `signature` | `int` | **Required**. Signature du block |
 
 Permet à un utilisateur connecter de proposé un block .
 L'utilisateur ne donne que la signature du bloc, car les autres
